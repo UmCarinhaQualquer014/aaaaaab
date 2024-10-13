@@ -23,6 +23,32 @@ div {
     padding: 8px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automaticamente o número de colunas */
+  gap: 10px; /* Espaçamento entre os botões */
+  padding: 20px;
+  background-color: #f1c1b1; /* Cor de fundo suave */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Faz o botão ocupar toda a largura da coluna */
+}
+
+button:hover {
+  background-color: #ffdddd;
+}
+
+
 footer {
     color: white;
     text-align: center;
@@ -31,4 +57,13 @@ footer {
 p1 {
     font: normal 40pt italic;
     font-style: italic;
+}
+
+.especial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
 }
